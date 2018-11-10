@@ -1,0 +1,6 @@
+[1110/134042.359:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Accès refusé. (0x5)
+[1110/134042.370:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[1110/134042.373:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Accès refusé. (0x5)
+[1110/134205.252:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Accès refusé. (0x5)
+[1110/134205.257:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[1110/134205.259:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Accès refusé. (0x5)

@@ -1,0 +1,73 @@
+<?php 
+// TEST SI LE MOT DE PASSE N'A PAS ÉTÉ ENVOYÉ
+if(!isset($_POST['psw']))
+{
+	?>
+
+	<!-- AFFICHAGE DU FORMULAIRE -->
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Formulaire d'accès</title>
+		</head>
+		<body>
+			<h3>
+				Bonjour. Vous tentez d'accéder à une page confidentiel.<br />Veuillez renseigner le mot de passe fourni par vos supérieurs :<br/>
+			</h3>
+			<form method="post" action="formulaire.php">
+				<p>
+					<input type="password" name="psw"/>
+					<input type="submit" value="valider"/>
+				</p>		
+			</form>
+		</body>
+	</html>
+
+	<?php
+}
+elseif (isset($_POST['psw']) AND ($_POST['psw'] != 'kangourou')) 
+{
+		?>
+
+	<!-- MAUVAIS MOT DE PASSE -->
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Formulaire d'accès</title>
+		</head>
+		<body>
+			<h3>
+				Le mot de passe est incorrect.<br/>
+			</h3>
+			<form method="post" action="formulaire.php">
+				<p>
+					<input type="password" name="psw"/>
+					<input type="submit" value="valider"/>
+				</p>		
+			</form>
+		</body>
+	</html>
+
+	<?php
+}
+else
+{
+	// AFFICHAGE DES CODES SECRET
+	?>
+	<h1>Voici les codes d'accès :</h1>
+        <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>   
+        
+        <p>
+        Cette page est réservée au personnel de la NASA. N'oubliez pas de la visiter régulièrement car les codes d'accès sont changés toutes les semaines.<br />
+        La NASA vous remercie de votre visite.
+        </p>
+
+<?php
+}
+
+
+?>
